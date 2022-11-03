@@ -3,27 +3,22 @@ import React, { Component } from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import Home from '../Screens/Home/Home';
+import * as Screens from '../Screens/'
+import navigationStrings from '../constants/navigationStrings';
 
 const Stack = createNativeStackNavigator();
 
 const Routes = () => {
     return (
-<NavigationContainer>
-      <Stack.Navigator>
-        <Stack.Screen name="Home" component={Home} />
-      </Stack.Navigator>
-    </NavigationContainer>
+        <NavigationContainer>
+            <Stack.Navigator screenOptions={{ headerShown: false }}>
+                <Stack.Screen name={navigationStrings.LOGIN} component={Screens.Login} />
+                <Stack.Screen name={navigationStrings.HOME} component={Screens.Home} />
+                {/* <Stack.Screen name={navigationStrings.LOGIN} component={Screens.Login} /> */}
+                <Stack.Screen name={navigationStrings.SIGN_UP} component={Screens.SignUp} />
+                <Stack.Screen name={navigationStrings.ADD_TASK} component={Screens.AddTask} />
+            </Stack.Navigator>
+        </NavigationContainer>
     );
 };
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-        backgroundColor: '#2c3e50',
-    },
-});
-
 export default Routes;
- 
