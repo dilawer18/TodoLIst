@@ -1,16 +1,33 @@
 import { StyleSheet } from "react-native";
-import { moderateScale } from "../../styles/responsiveSize";
+import colorsPath from "../../constants/colorsPath";
+import { moderateScale, moderateScaleVertical } from "../../styles/responsiveSize";
 
 
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: "pink",
-        justifyContent: 'center',
-        alignItems: 'center',
-        // alignItems: 'center',
-        // padding: moderateScale(24),
-        backgroundColor: 'white'
+        backgroundColor:colorsPath.ic_bg,
+        paddingHorizontal:moderateScale(16),
     },
+    inputStyle:{
+        marginTop:30,
+        flex:1,
+        
+    },
+    txtStyle:{
+    textAlign:'right',
+    marginTop:10,
+    marginBottom:20,
+    
+
+    },
+    endFlexStyle:{
+        justifyContent:'center',
+        flexDirection:'row'
+    },
+    endTextStyle:{ 
+        color: colorsPath.purple
+     },
+
 });
 export default styles

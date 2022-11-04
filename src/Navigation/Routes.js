@@ -12,11 +12,15 @@ const Routes = () => {
     return (
         <NavigationContainer>
             <Stack.Navigator screenOptions={{ headerShown: false }}>
-                <Stack.Screen name={navigationStrings.LOGIN} component={Screens.Login} />
-                <Stack.Screen name={navigationStrings.HOME} component={Screens.Home} />
-                {/* <Stack.Screen name={navigationStrings.LOGIN} component={Screens.Login} /> */}
-                <Stack.Screen name={navigationStrings.SIGN_UP} component={Screens.SignUp} />
-                <Stack.Screen name={navigationStrings.ADD_TASK} component={Screens.AddTask} />
+            <Stack.Screen name={navigationStrings.SIGN_UP} component={Screens.SignUp} />
+            <Stack.Screen name={navigationStrings.ADD_TASK} component={Screens.AddTask} />
+            <Stack.Screen name={navigationStrings.LOGIN} component={Screens.Login} />
+            <Stack.Screen name={navigationStrings.HOME} component={Screens.Home} />
+               
+                <Stack.Screen name={navigationStrings.On_Boarding} component={Screens.OnBoarding} />
+                
+                
+                
             </Stack.Navigator>
         </NavigationContainer>
     );

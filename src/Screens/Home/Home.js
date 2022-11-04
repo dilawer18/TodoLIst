@@ -1,12 +1,14 @@
 //import liraries
 import React, { Component } from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet, Button } from 'react-native';
 
 // create a component
-const Home = () => {
+const Home = ({navigation}) => {
     return (
         <View style={styles.container}>
             <Text>Home</Text>
+            <Button title='go back'
+            />
         </View>
     );
 };

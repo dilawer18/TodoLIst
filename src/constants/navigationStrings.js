@@ -1,6 +1,7 @@
 export default {
     HOME: 'Home',
-    LOGIN: 'LOgin',
+    LOGIN: 'Login',
     SIGN_UP: 'SignUp',
-    ADD_TASK: 'AddTask'
+    ADD_TASK: 'AddTask',
+    On_Boarding:'OnBoarding'
 }
